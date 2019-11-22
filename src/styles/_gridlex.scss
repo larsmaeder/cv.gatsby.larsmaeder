@@ -1,0 +1,23 @@
+$gl-colCount: 12;
+$gl-gridName: grid;
+$gl-colName: col;
+$gl-attributeName: class;
+$gl-gutter: 7rem;
+$gl-gutter-outer: calc(#{$gl-gutter} / 2);
+$gl-gutter-vertical: 1rem;
+$gl-mq-width: "min-width";
+$gl-mq-list: (
+  lg: 64em, // min 1024px
+  md: 48em, // min 768px
+  sm: 36em, // min 576px
+  xs: 0 // min 0px
+);
+
+.gridContainer {
+  padding-left: $gl-gutter-outer;
+  padding-right: $gl-gutter-outer;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@import "../../node_modules/gridlex/src/gridlex";

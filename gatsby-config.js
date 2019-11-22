@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `larsmaeder.ch`,
+    description: `Curriculum Vitae (CV) von Lars Mäder, Grafik Designer & Interaction Designer (UX—UI) in Ausbildung`,
+    author: `Lars Mäder`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -14,7 +14,12 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+        resolve: `gatsby-plugin-sharp`,
+        options: {
+          defaultQuality: 100,
+        },
+      },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -26,6 +31,14 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
+    },
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-postcss`,
+    {
+        resolve: `gatsby-plugin-minify-classnames`,
+        options: {
+            develop: true, // Enable on `gatsby develop`
+        },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

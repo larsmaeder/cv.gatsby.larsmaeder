@@ -1,0 +1,46 @@
+// Intro avatar color change
+@keyframes colorChange {
+  0% {
+    background: #f8e9a1;
+  }
+  25% {
+    background: #f76c6c;
+  }
+  50% {
+    background: #a8d0e6;
+  }
+  75% {
+    background: #374785;
+  }
+  100% {
+    background: #24305e;
+  }
+}
+
+// Body load opacity
+@keyframes loadOpacity {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(var(--size-1));
+    transform: translateY(var(--size-1));
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+// Load up
+@keyframes animUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(var(--size-1));
+    transform: translateY(var(--size-1));
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}

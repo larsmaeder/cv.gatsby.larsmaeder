@@ -1,0 +1,15 @@
+.introWrapper {
+  text-align: left;
+  margin: {
+    bottom: var(--size-4);
+  }
+  .lead {
+    font-size: var(--scale-1);
+    color: var(--color-grey-900);
+  }
+  a {
+    margin: {
+      top: var(--size-1);
+    }
+  }
+}
