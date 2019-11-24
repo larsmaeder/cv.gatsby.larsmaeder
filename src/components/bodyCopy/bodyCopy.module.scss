@@ -1,0 +1,15 @@
+.backgroundTitle {
+    white-space: nowrap;
+    margin: 0;
+    font: {
+        size: var(--scale-huge);
+    }
+    color: var(--color-grey-100);
+}
+
+.offsetContent {
+    // transform: translateY(calc(var(--size-2) * -1));
+    margin: {
+        // top: calc(var(--size-2) * -1);
+    }
+}
