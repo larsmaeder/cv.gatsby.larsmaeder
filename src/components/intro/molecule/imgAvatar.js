@@ -9,7 +9,10 @@ const Image = () => {
     <StaticQuery
       query={query}
       render={data => (
-          <Img className={Style.imageWrapper} fluid={data.file.childImageSharp.fluid} />
+        <Img
+          className={Style.imageWrapper}
+          fluid={data.file.childImageSharp.fluid}
+        />
       )}
     />
   )
@@ -17,9 +20,7 @@ const Image = () => {
 
 export const query = graphql`
   query {
-    file(
-      relativePath: { eq: "682988026050e761c0f35c1392548e3e-avatar.webp" }
-    ) {
+    file(relativePath: { eq: "682988026050e761c0f35c1392548e3e-avatar.webp" }) {
       childImageSharp {
         fluid(maxWidth: 165) {
           ...GatsbyImageSharpFluid_withWebp
