@@ -1,5 +1,5 @@
 import React from "react"
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import AnchorLink from "react-anchor-link-smooth-scroll"
 
 import Style from "./intro.module.scss"
 
@@ -20,7 +20,9 @@ const IntroSection = () => (
             erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
             et ea rebum.
           </p>
-          <AnchorLink offset="100" href="#cv-start">Gehe zu meinem CV</AnchorLink>
+          <AnchorLink offset="100" href="#cv-start">
+            Gehe zu meinem CV
+          </AnchorLink>
         </div>
       </div>
     </div>
