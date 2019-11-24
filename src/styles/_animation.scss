@@ -1,0 +1,15 @@
+
+main {
+    opacity: 0;
+    animation: loadOpacity var(--duration-3) var(--easing-standard) var(--delay-3)
+      1 normal forwards;
+  }
+
+.animUp {
+    opacity: 0;
+  }
+  
+  .animUp.in {
+    animation: animUp var(--duration-1) var(--easing-standard) var(--delay-1) 1
+      normal forwards;
+  }

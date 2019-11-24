@@ -2,8 +2,11 @@
 @import url("https://rsms.me/inter/inter.css");
 // Import Styles
 @import "normalize";
+@import "gridlex";
 @import "variables";
 @import "global";
+@import "typography";
+@import "spacing";
 @import "keyframes";
+@import "animation";
 @import "mediaqueries";
-@import "gridlex";
