@@ -1,0 +1,33 @@
+.imageWrapper {
+  display: flex;
+  flex: 0 1 auto;
+}
+
+.labelWrapper {
+  flex: 1 1 auto;
+  margin: {
+    left: var(--size-1);
+  }
+}
+
+.labelName {
+  display: block;
+  margin: 0;
+}
+
+.labelLevel {
+  display: inline-block;
+  margin: {
+    bottom: var(--size-00);
+  }
+  text-transform: uppercase;
+  letter-spacing: var(--tracked-loose);
+  font: {
+    size: var(--scale-000);
+    weight: var(--font-weight-bold);
+  }
+  color: var(--color-bg);
+  padding: var(--size-000);
+  border-radius: var(--radius-2);
+  background-color: var(--color-green);
+}
