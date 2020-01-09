@@ -41,8 +41,9 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "npm run deploy",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -r https://$GITHUB_TOKEN@github.com/larsmaeder/cv.gatsby.larsmaeder.git"
+    "test": "echo \"no test specified\" && exit 0",
+    "preDeploy": "gatsby build --prefix-paths",
+    "deploy": "npm run preDeploy && gh-pages -d public"
   },
   "repository": {
     "type": "git",
