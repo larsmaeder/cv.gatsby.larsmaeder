@@ -1,6 +1,6 @@
 import React from "react"
 import AnchorLink from "react-anchor-link-smooth-scroll"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 import Style from "./intro.module.scss"
 
@@ -16,15 +16,12 @@ const Intro = () => (
             </span>
           </h1>
           <p className={Style.lead}>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum.
+            Ich bin ein Interaction Designer mit Leidenschaft für Code. Ich mag es, über meine Grenzen hinauszugehen und neue Fähigkeiten und Kenntnisse zu erwerben, um so grossartige Produkte zu kreieren.
           </p>
           <AnchorLink className={Style.primaryButton + " " + Style.button} offset="100" href="#cv-start">
             CV ansehen
           </AnchorLink>
-          <Link className={Style.secondaryButton + " " + Style.button} to="/">CV herunterladen</Link>
+          {/* <Link className={Style.secondaryButton + " " + Style.button} to="/">CV als PDF herunterladen</Link> */}
         </div>
       </div>
     </div>

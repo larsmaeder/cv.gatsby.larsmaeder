@@ -2,18 +2,14 @@ import React from "react"
 
 import Style from "./card.module.scss"
 
-const LabelText = ({ title, children }) => (
-  <div className={Style.lineBottom + " grid-2-center-noBottom"}>
-    <div className="col-12_sm-3">
-      <div>
-        <h3>{title}</h3>
-      </div>
+const Card = ({ title, children }) => (
+  <div className={Style.card + " grid-2-center-noBottom"}>
+    <div className="col-12_lg-3">
+      <h5>{title}</h5>
     </div>
-    <div className="col-12_sm-9">
-      <div>{children}</div>
-    </div>
-    <hr></hr>
+    <div className="col-12_lg-9">{children}</div>
+    <hr />
   </div>
 )
 
-export default LabelText
+export default Card

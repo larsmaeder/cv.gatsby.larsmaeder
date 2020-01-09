@@ -7,6 +7,7 @@ import Intro from "../components/intro/intro"
 import BackgroundTitle from "../components/backgroundTitle/backgroundTitle"
 import LabelText from "../components/labelText/labelText"
 import Card from "../components/card/card"
+import CardCourse from "../components/card/cardCourse"
 import {
   AdobeXD,
   Craft,
@@ -22,7 +23,7 @@ import {
   CSS,
   Javascript,
   VSCode,
-} from "../components/labelText/img"
+} from "../components/img/img"
 import Footer from "../components/footer/footer"
 
 const IndexPage = () => (
@@ -33,15 +34,20 @@ const IndexPage = () => (
       <Intro />
       <BackgroundTitle anchor="cv-start" classes="mt-4" title="Persönliches">
         <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-          takimata sanctus est Lorem ipsum dolor sit amet.
+          Ich bin ein Fan von digitalen Produkten und ihrer unbegrenzten
+          Möglichkeiten. Ich strebe nach klarem, einfachem Design und besitze
+          eine Ader für altbewährtes. Während ich mit neuen Frameworks und
+          Bibliotheken experimentiere, verstehe ich, wie wichtig es ist, den
+          Fokus auf das Endziel zu legen: dem Benutzer ein schönes, funktionales
+          und verständliches Produkt zu liefern. Dank meiner langjährigen
+          Erfahrung im Bereich Typografie&#x202F;&&#x202F;Design, kann ich
+          bewährte Grundwerte in die digitale Welt adaptieren und so
+          aussergewöhnliche Produkte entwickeln.
+        </p>
+        <p>
+          Wenn ich nicht gerade hinter einem Computerbildschirm sitze, bin ich
+          irgendwo unterwegs, um etwas zu erkunden, oder um Menschen und die
+          Natur zu fotografieren, oder ich bleibe zu Hause und zeichne.
         </p>
       </BackgroundTitle>
       <BackgroundTitle classes="mt-4" title="Berufserfahrung">
@@ -52,32 +58,80 @@ const IndexPage = () => (
         <h5>Lithop Electronic Media AG</h5>
         <p>2011–2019</p>
       </BackgroundTitle>
+      <BackgroundTitle classes="mt-4" title="Schule">
+        <Card title="SfGZ">
+          <CardCourse date="2017–Aktuell">
+            <h6>Höhere Fachschule</h6>
+            <p>Interaction Design HF</p>
+            <p>
+              Dipl.&#x202F;Gestalter/-in HF Fachrichtung Kommunikationsdesign
+              mit Vertiefungsrichtung Interaction Design
+            </p>
+          </CardCourse>
+          <CardCourse date="2011–2015">
+            <h6>Berufslehre</h6>
+            <p>Polygraf EFZ</p>
+            <p>Fachrichtung Mediaproduktion</p>
+          </CardCourse>
+        </Card>
+      </BackgroundTitle>
+      <BackgroundTitle classes="mt-4" title="Besuchte Kurse">
+        <Card title="Meetup.com">
+          <CardCourse date="2018">
+            <h6>
+              <a
+                href="https://www.meetup.com/de-DE/Zurich-Web-Worknights/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Zürich Web‑Worknights
+              </a>
+            </h6>
+            <p>Werkstatt&#x202F;&&#x202F;React.js</p>
+            <p>Lightning Talk zu React.js.</p>
+          </CardCourse>
+        </Card>
+        <Card title="Adobe Kurs">
+          <CardCourse date="2016">
+            <h6>Web Design mit Adobe Muse CC</h6>
+            <p>Für Fortgeschrittene</p>
+          </CardCourse>
+          <CardCourse date="2015">
+            <h6>Web Design mit Adobe Muse CC</h6>
+            <p>Für Beginner</p>
+          </CardCourse>
+        </Card>
+      </BackgroundTitle>
       <BackgroundTitle classes="mt-4" title="Fähigkeiten">
         <h3>Design</h3>
         <div className="grid-2-middle">
           <LabelText
             classes="mt-2 col-12_lg-6"
-            level="Proficient"
+            level="Erfahren"
             name="Adobe XD"
           >
             <AdobeXD />
           </LabelText>
-          <LabelText classes="mt-2 col-12_lg-6" level="Expert" name="Sketch">
+          <LabelText
+            classes="mt-2 col-12_lg-6"
+            level="Professionell"
+            name="Sketch"
+          >
             <Sketch />
           </LabelText>
-          <LabelText classes="mt-2 col-12_lg-6" level="Proficient" name="Figma">
+          <LabelText classes="mt-2 col-12_lg-6" level="Erfahren" name="Figma">
             <Figma />
           </LabelText>
           <LabelText
             classes="mt-2 col-12_lg-6"
-            level="Competent"
+            level="Kompetent"
             name="InVision Studio"
           >
             <InVisionStudio />
           </LabelText>
           <LabelText
             classes="mt-2 col-12_lg-6"
-            level="Expert"
+            level="Professionell"
             name="Adobe Creative Cloud"
           >
             <CreativeCloud />
@@ -87,12 +141,12 @@ const IndexPage = () => (
         <div className="grid-2-middle">
           <LabelText
             classes="mt-2 col-12_lg-6"
-            level="Competent"
+            level="Kompetent"
             name="InVision"
           >
             <InVision />
           </LabelText>
-          <LabelText classes="mt-2 col-12_lg-6" level="Competent" name="Craft">
+          <LabelText classes="mt-2 col-12_lg-6" level="Kompetent" name="Craft">
             <Craft />
           </LabelText>
         </div>
@@ -100,68 +154,50 @@ const IndexPage = () => (
         <div className="grid-2-middle">
           <LabelText
             classes="mt-2 col-12_lg-6"
-            level="Advanced Beginnner"
+            level="Fortgeschritten"
             name="Gatsby"
           >
             <Gatsby />
           </LabelText>
-          <LabelText classes="mt-2 col-12_lg-6" level="Competent" name="Github">
+          <LabelText classes="mt-2 col-12_lg-6" level="Kompetent" name="Github">
             <Github />
           </LabelText>
-          <LabelText classes="mt-2 col-12_lg-6" level="Proficient" name="HTML5">
+          <LabelText classes="mt-2 col-12_lg-6" level="Erfahren" name="HTML5">
             <HTML />
           </LabelText>
-          <LabelText classes="mt-2 col-12_lg-6" level="Proficient" name="CSS3">
+          <LabelText classes="mt-2 col-12_lg-6" level="Erfahren" name="CSS3">
             <CSS />
           </LabelText>
           <LabelText
             classes="mt-2 col-12_lg-6"
-            level="Advanced Beginnner"
+            level="Fortgeschritten"
             name="Javascript"
           >
             <Javascript />
           </LabelText>
           <LabelText
             classes="mt-2 col-12_lg-6"
-            level="Competent"
+            level="Kompetent"
             name="Visual Studio Code"
           >
             <VSCode />
           </LabelText>
         </div>
       </BackgroundTitle>
-      <BackgroundTitle classes="mt-4" title="Lorem Ipsum">
-        <Card title="Lorem Ipsum">
-          <h4>Lorem Ipsum</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat,
-          </p>
-        </Card>
-        <Card title="Lorem Ipsum">
-          <h4>Lorem Ipsum</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat,
-          </p>
-        </Card>
-        <Card title="Lorem Ipsum">
-          <h4>Lorem Ipsum</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat,
-          </p>
-        </Card>
+      <BackgroundTitle classes="mt-4" title="Sprachen">
+        <h6>Deutsch</h6>
+        <p>Muttersprache</p>
+        <h6>Englisch</h6>
+        <p>Fliessend</p>
+        <h6>Französisch</h6>
+        <p>Grundkenntnisse</p>
       </BackgroundTitle>
-      <BackgroundTitle classes="mt-4" title="Anderes">
+      <BackgroundTitle classes="mt-4" title="Uber-Rating">
         <div className="grid-2-middle">
           <LabelText
             classes="mt-2 col-12_lg-6"
-            level="Beifahrer-Level: Expert"
-            name="4.59"
+            level="Beifahrer-Level: Professionell"
+            name="4.60"
           >
             <Uber />
           </LabelText>

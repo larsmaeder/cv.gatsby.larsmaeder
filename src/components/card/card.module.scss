@@ -1,4 +1,11 @@
-.lineBottom {
+.card {
+  align-items: baseline;
+  .grey {
+    & p:nth-child(2n+1) {
+      color: var(--color-grey-700);
+      font-style: italic;
+    }
+  }
   hr {
     width: calc(100% - 7rem);
     border: {
@@ -7,5 +14,17 @@
       left: 0;
       right: 0;
     }
+    &.full {
+      width: 100%;
+      margin-bottom: var(--size-0);
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+  .small {
+    font-size: var(--scale-000);
+    letter-spacing: var(--tracked-loose);
+    font-weight: var(--font-weight-bold);
   }
 }
