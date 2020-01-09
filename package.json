@@ -28,6 +28,7 @@
     "react-visibility-sensor": "^5.1.1"
   },
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "prettier": "^1.19.1"
   },
   "keywords": [
@@ -40,7 +41,7 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "gatsby build"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -r https://$GITHUB_TOKEN@github.com/larsmaeder/cv.gatsby.larsmaeder.git"
   },
   "repository": {
     "type": "git",

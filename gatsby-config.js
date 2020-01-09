@@ -1,4 +1,5 @@
 module.exports = {
+pathPrefix: "/cv.gatsby.larsmaeder",
   siteMetadata: {
     title: `larsmaeder.ch`,
     description: `Curriculum Vitae (CV) von Lars Mäder, Grafik Designer & Interaction Designer (UX—UI) in Ausbildung`,
