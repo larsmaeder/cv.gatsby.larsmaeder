@@ -29,7 +29,7 @@ const Footer = ({ classes }) => (
                 This site is powered by{" "}
                 <a href="https://www.gatsbyjs.org">Gatsby.js</a>.<br></br>
                 Found a bug? Help me to{" "}
-                <a href="https://www.gatsbyjs.org">fix it</a>.
+                <a href="https://github.com/larsmaeder/cv.gatsby.larsmaeder/issues">fix it</a>.
               </p>
               <p>©&#x202F;2020 Lars Mäder</p>
             </div>

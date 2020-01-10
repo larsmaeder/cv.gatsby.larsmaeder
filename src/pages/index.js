@@ -75,7 +75,7 @@ const IndexPage = () => (
           </CardCourse>
         </Card>
       </BackgroundTitle>
-      <BackgroundTitle classes="mt-4" title="Besuchte Kurse">
+      <BackgroundTitle classes="mt-4" title="Besuchte Kurse und Talks">
         <Card title="Meetup.com">
           <CardCourse date="2018">
             <h6>
@@ -132,7 +132,7 @@ const IndexPage = () => (
           <LabelText
             classes="mt-2 col-12_lg-6"
             level="Professionell"
-            name="Adobe Creative Cloud"
+            name="Adobe CC"
           >
             <CreativeCloud />
           </LabelText>
@@ -178,7 +178,7 @@ const IndexPage = () => (
           <LabelText
             classes="mt-2 col-12_lg-6"
             level="Kompetent"
-            name="Visual Studio Code"
+            name="VS Code"
           >
             <VSCode />
           </LabelText>
@@ -192,12 +192,12 @@ const IndexPage = () => (
         <h6>Französisch</h6>
         <p>Grundkenntnisse</p>
       </BackgroundTitle>
-      <BackgroundTitle classes="mt-4" title="Uber-Rating">
+      <BackgroundTitle classes="mt-4" title="Anderes">
         <div className="grid-2-middle">
           <LabelText
             classes="mt-2 col-12_lg-6"
-            level="Beifahrer-Level: Professionell"
-            name="4.60"
+            level="Beifahrer: Professionell"
+            name="Uber: 4.60"
           >
             <Uber />
           </LabelText>
