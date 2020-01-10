@@ -51,7 +51,7 @@ const IndexPage = () => (
         </p>
       </BackgroundTitle>
       <BackgroundTitle classes="mt-4" title="Berufserfahrung">
-        <h3>Interaction Designer (UI/UX)</h3>
+        <h3>Interaction Designer (UI–UX)</h3>
         <h5>Lithop Electronic Media AG</h5>
         <p>2019–Aktuell</p>
         <h3>Polygraf EFZ</h3>
