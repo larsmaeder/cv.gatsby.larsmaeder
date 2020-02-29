@@ -32,7 +32,7 @@ const IndexPage = () => (
     <Header breadcrumbTitle="Curriculum Vitae" />
     <main>
       <Intro />
-      <BackgroundTitle anchor="cv-start" classes="mt-4" title="Persönliches">
+      <BackgroundTitle anchor="cv-start" classes="mt-4" title="Über mich">
         <p>
           Ich bin ein Fan von digitalen Produkten und ihrer unbegrenzten
           Möglichkeiten. Ich strebe nach klarem, einfachem Design und besitze
