@@ -2,7 +2,7 @@
   --scale-ratio: 1.175;
   --scale-000: calc(var(--scale-0) * 0.5);
   --scale-00: calc(var(--scale-0) * 0.75);
-  --scale-0: 1rem;
+  --scale-0: 1.125rem;
   --scale-1: calc(var(--scale-0) * var(--scale-ratio));
   --scale-2: calc(var(--scale-1) * var(--scale-ratio));
   --scale-3: calc(var(--scale-2) * var(--scale-ratio));
@@ -28,7 +28,7 @@
   --size-0000: calc(var(--size-0) * 0.125);
   --size-000: calc(var(--size-0) * 0.25);
   --size-00: calc(var(--size-0) * 0.5);
-  --size-0: 1rem;
+  --size-0: 1.125rem;
   --size-1: calc(var(--size-0) * var(--size-ratio));
   --size-2: calc(var(--size-1) * var(--size-ratio));
   --size-3: calc(var(--size-2) * var(--size-ratio));
