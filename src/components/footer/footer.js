@@ -1,43 +1,77 @@
 import React from "react"
+import { StaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import Style from "./footer.module.scss"
-import { Avatar } from "../img/img"
 
-const Footer = ({ classes }) => (
-  <footer className={classes}>
-    <section className={Style.footerWrapper}>
-      <div className="gridContainer">
-        <div className="grid-middle-noGutter">
-          <div className="col-12_lg-8">
-            <div className={Style.imageWrapper}>
-              <Avatar />
+export default () => (
+  <StaticQuery
+    query={graphql`
+      query fetchAvatar {
+        file(
+          relativePath: { eq: "f0c3f6decc593b2e69a2996d7a35d776-sticker.png" }
+        ) {
+          childImageSharp {
+            fluid(maxWidth: 420) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
+    `}
+    render={data => (
+      <footer className="mt-3">
+        <div className="gridContainer">
+          <div className="grid">
+            <div className="col-12">
+              <div className={Style.outro}>
+                <div className={Style.imageAvatar}>
+                  <Img
+                    className={Style.img}
+                    fluid={data.file.childImageSharp.fluid}
+                    alt="Avatar"
+                  />
+                </div>
+              </div>
             </div>
-            <div className={Style.textWrapper}>
-              <h2>
-                Zu viel gescrollt?
-                <br />
-                Lass es nicht umsonst gewesen sein.
-              </h2>
-              <a href="mailto:mail@larsmaeder.ch">mail@larsmaeder.ch</a>
+            <div className="col-12">
+              <div className={Style.textWrapper}>
+                <h2>
+                  Endstation.
+                  <br />
+                  Sag Hallo.
+                </h2>
+                <a href="mailto:mail@larsmaeder.ch">mail@larsmaeder.ch</a>
+              </div>
             </div>
           </div>
         </div>
-        <div className="grid mt-4">
-          <div className="col">
-            <div className={Style.small}>
-              <p>
-                This site is powered by{" "}
-                <a href="https://www.gatsbyjs.org">Gatsby.js</a>.<br></br>
-                Found a bug? Help me to{" "}
-                <a href="https://github.com/larsmaeder/cv.gatsby.larsmaeder/issues">fix it</a>.
-              </p>
-              <p>©&#x202F;2020 Lars Mäder</p>
+        <div className="gridContainer-noGutter mt-3">
+          <div className={Style.impressum}>
+            <div className="gridContainer">
+              <div className="grid-noGutter">
+                <div className="col">
+                  <p>
+                    This site is running with{" "}
+                    <a href="https://www.gatsbyjs.org">Gatsby.js</a>-Power.
+                    <br></br>
+                    You've found a{" "}
+                    <span role="img" aria-label="Käfer Emoji (English: Bug)">
+                      🐞
+                    </span>
+                    ? Help me to{" "}
+                    <a href="https://github.com/larsmaeder/cv.gatsby.larsmaeder/issues">
+                      fix it
+                    </a>
+                    .
+                  </p>
+                  <p>©&#x202F;2020 Lars Mäder / Code and Design</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </footer>
+      </footer>
+    )}
+  />
 )
-
-export default Footer

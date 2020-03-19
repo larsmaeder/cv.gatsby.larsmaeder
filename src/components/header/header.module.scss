@@ -1,7 +1,7 @@
 header {
   margin: {
     top: var(--size-2);
-    bottom: var(--size-2);
+    bottom: var(--size-0);
   }
   .breadcrumb {
     font: {
@@ -18,5 +18,25 @@ header {
         }
       }
     }
+    a {
+      &:link {
+        color: var(--color-grey-500);
+      }
+      &:visited {
+        color: var(--color-grey-500);
+      }
+      &:hover {
+        color: var(--color-grey-700);
+      }
+      &:active {
+        color: var(--color-grey-500);
+      }
+      &:after {
+        display: none;
+        // background: var(--color-grey-700);
+      }
+    }
   }
+  --sal-duration: var(--duration-6);
+  --sal-delay: var(--delay-6);
 }

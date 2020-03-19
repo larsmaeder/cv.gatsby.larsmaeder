@@ -1,0 +1,19 @@
+{
+  "info": {
+    "name": "intro"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "lead": {
+      "type": "text"
+    }
+  },
+  "connection": "default",
+  "collectionName": "intros"
+}

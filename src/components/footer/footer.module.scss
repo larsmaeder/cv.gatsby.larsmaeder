@@ -1,27 +1,24 @@
-.footerWrapper {
-  padding: {
-      bottom: var(--size-1);
-  }
+.impressum {
+  background-color: var(--color-grey-100);
+}
+.outro {
   background-color: var(--color-bg);
+  .imageAvatar {
+    .img {
+      width: 120px;
+      height: auto;
+    }
+  }
+}
+.textWrapper {
+  h2 {
+    margin-top: 0;
+    margin-block-start: 0;
+  }
 }
 
-.imageWrapper {
-    display: flex;
-    flex: 0 1 auto;
-  }
-  
-  .textWrapper {
-    flex: 1 1 auto;
-    margin: {
-      left: var(--size-1);
-    }
-    h2 {
-        margin-top: 0;
-        margin-block-start: 0;
-    }
-  }
-
-.small {
+.impressum {
+  padding: var(--size-1) 0 var(--size-1) 0;
   p,
   a {
     font-size: var(--scale-00);

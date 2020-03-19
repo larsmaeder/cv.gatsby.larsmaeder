@@ -1,16 +1,16 @@
 :root {
   --scale-ratio: 1.175;
-  --scale-000: calc(var(--scale-0) * 0.5);
-  --scale-00: calc(var(--scale-0) * 0.75);
-  --scale-0: 1.125rem;
-  --scale-1: calc(var(--scale-0) * var(--scale-ratio));
-  --scale-2: calc(var(--scale-1) * var(--scale-ratio));
-  --scale-3: calc(var(--scale-2) * var(--scale-ratio));
-  --scale-4: calc(var(--scale-3) * var(--scale-ratio));
-  --scale-5: calc(var(--scale-4) * var(--scale-ratio));
-  --scale-6: calc(var(--scale-5) * var(--scale-ratio));
-  --scale-7: calc(var(--scale-6) * var(--scale-ratio));
-  --scale-8: calc(var(--scale-7) * var(--scale-ratio));
+  --scale-000: calc(var(--scale-0) * 0.5); // 10
+  --scale-00: calc(var(--scale-0) * 0.75); // 15
+  --scale-0: 1.125rem; // 20px – rootsize
+  --scale-1: calc(var(--scale-0) * var(--scale-ratio)); // 23.5
+  --scale-2: calc(var(--scale-1) * var(--scale-ratio)); // 27.6
+  --scale-3: calc(var(--scale-2) * var(--scale-ratio)); // 32.4
+  --scale-4: calc(var(--scale-3) * var(--scale-ratio)); // 38.1
+  --scale-5: calc(var(--scale-4) * var(--scale-ratio)); // 44.8
+  --scale-6: calc(var(--scale-5) * var(--scale-ratio)); // 52.6
+  --scale-7: calc(var(--scale-6) * var(--scale-ratio)); // 61.8
+  --scale-8: calc(var(--scale-7) * var(--scale-ratio)); // 72.7
   --scale-huge: calc(var(--scale-8) * var(--size-ratio));
   --font-family-default: "Inter", sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji",
@@ -25,18 +25,19 @@
   --font-heading: var(--font-weight-bold) var(--scale-3) /
     var(--leading-heading) var(--font-family-default);
   --size-ratio: 2;
-  --size-0000: calc(var(--size-0) * 0.125);
-  --size-000: calc(var(--size-0) * 0.25);
-  --size-00: calc(var(--size-0) * 0.5);
-  --size-0: 1.125rem;
-  --size-1: calc(var(--size-0) * var(--size-ratio));
-  --size-2: calc(var(--size-1) * var(--size-ratio));
-  --size-3: calc(var(--size-2) * var(--size-ratio));
-  --size-4: calc(var(--size-3) * var(--size-ratio));
-  --size-5: calc(var(--size-4) * var(--size-ratio));
-  --size-6: calc(var(--size-5) * var(--size-ratio));
-  --size-7: calc(var(--size-6) * var(--size-ratio));
-  --size-8: calc(var(--size-7) * var(--size-ratio));
+  --size-00000: calc(var(--size-0) * 0.075); // 1.5
+  --size-0000: calc(var(--size-0) * 0.125); // 2.5
+  --size-000: calc(var(--size-0) * 0.25); // 5
+  --size-00: calc(var(--size-0) * 0.5); // 10
+  --size-0: 1.125rem; // 20px – rootsize
+  --size-1: calc(var(--size-0) * var(--size-ratio)); // 40
+  --size-2: calc(var(--size-1) * var(--size-ratio)); // 80
+  --size-3: calc(var(--size-2) * var(--size-ratio)); // 160
+  --size-4: calc(var(--size-3) * var(--size-ratio)); // 320
+  --size-5: calc(var(--size-4) * var(--size-ratio)); // 640
+  --size-6: calc(var(--size-5) * var(--size-ratio)); // 1280
+  --size-7: calc(var(--size-6) * var(--size-ratio)); // 2560
+  --size-8: calc(var(--size-7) * var(--size-ratio)); // 5120
   --elevation-1: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
     0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   --elevation-2: 0 3px 4px 0 rgba(0, 0, 0, 0.14),
@@ -52,12 +53,20 @@
   --easing-standard: cubic-bezier(0.4, 0, 0.2, 1);
   --easing-decelerate: cubic-bezier(0, 0, 0.2, 1);
   --easing-accelerate: cubic-bezier(0.4, 0, 1, 1);
-  --delay-1: 300ms;
-  --delay-2: 600ms;
-  --delay-3: 900ms;
-  --duration-1: 550ms;
-  --duration-2: 850ms;
-  --duration-3: 1000ms;
+  --delay-0: 60ms;
+  --delay-1: 250ms;
+  --delay-2: 500ms;
+  --delay-3: 750ms;
+  --delay-4: 1000ms;
+  --delay-5: 1500ms;
+  --delay-6: 2000ms;
+  --duration-0: 250ms;
+  --duration-1: 500ms;
+  --duration-2: 1000ms;
+  --duration-3: 1250ms;
+  --duration-4: 1500ms;
+  --duration-5: 2000ms;
+  --duration-6: 2500ms;
   --layer-0: 0;
   --layer-1: 10;
   --layer-2: 20;

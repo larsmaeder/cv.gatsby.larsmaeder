@@ -1,15 +1,16 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import Style from "./header.module.scss"
 
-const Header = ({ breadcrumbTitle }) => (
-  <header data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease" data-sal-duration="850">
+const Header = ({ crumb, dataSal }) => (
+  <header data-sal={dataSal || "slide-up"} data-sal-easing="ease">
     <section className={Style.headerWrapper}>
       <div className="gridContainer">
         <div className="grid">
           <div className="col">
             <p className={Style.breadcrumb}>
-              Lars Mäder<span>{breadcrumbTitle}</span>
+              <Link to="/">Lars Mäder</Link><span>{crumb}</span>
             </p>
           </div>
         </div>

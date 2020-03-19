@@ -3,11 +3,17 @@
   .lead {
     font-size: var(--scale-1);
     color: var(--color-grey-900);
+    --sal-duration: var(--duration-2);
+    --sal-delay: var(--delay-3);
   }
   a {
     margin: {
       top: var(--size-0);
     }
+  }
+  h1.sal {
+    --sal-duration: var(--duration-2);
+    --sal-delay: var(--delay-0);
   }
 }
 

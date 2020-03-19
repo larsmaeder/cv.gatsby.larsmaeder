@@ -1,0 +1,55 @@
+{
+  "connection": "default",
+  "collectionName": "articles",
+  "info": {
+    "name": "article"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "date": {
+      "type": "date"
+    },
+    "status": {
+      "type": "string"
+    },
+    "project": {
+      "type": "string"
+    },
+    "service": {
+      "type": "richtext"
+    },
+    "deliverables": {
+      "type": "richtext"
+    },
+    "mockup": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "pageAlias": {
+      "type": "string"
+    },
+    "bgColor": {
+      "type": "string"
+    },
+    "role": {
+      "type": "richtext"
+    }
+  }
+}

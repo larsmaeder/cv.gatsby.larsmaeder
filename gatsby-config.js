@@ -1,10 +1,30 @@
+require(`dotenv`).config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
-    title: `larsmaeder.ch`,
-    description: `Curriculum Vitae (CV) von Lars Mäder, Interaction Designer (UX—UI)`,
+    title: `Lars Mäder (UX–UI)`,
+    description: `Personal website of Lars Mäder`,
     author: `Lars Mäder`,
+    siteUrl: `http://localhost:8000`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-strapi`,
+      options: {
+        apiURL: `http://localhost:1337`,
+        contentTypes: [`articles`, `intros`],
+        queryLimit: 1000,
+      },
+    },
+    `gatsby-plugin-transition-link`,
+    // {
+    //   resolve: `gatsby-plugin-transition-link`,
+    //   options: {
+    //     layout: require.resolve(`./src/components/layout.js`),
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {
@@ -31,11 +51,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Lars Mäder (UX–UI)`,
+        short_name: `Lars Mäder (UX–UI)`,
+        description: `Personal website of Lars Mäder.`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        lang: `de`,
+        background_color: `#fff`,
+        theme_color: `#14191f`,
         display: `minimal-ui`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
@@ -45,22 +67,22 @@ module.exports = {
       resolve: `gatsby-plugin-postcss`, // Implements PostCSS
       options: {
         postCssPlugins: [
-          require("postcss-import")(), // Add support for sass-like '@import'
-          require("postcss-extend")(), // Add support for sass-like '@extend'
-          require("postcss-nesting")(), // Add support for sass-like nesting of rules
-          require("postcss-pxtorem")({
+          require(`postcss-import`)(), // Add support for sass-like '@import'
+          require(`postcss-extend`)(), // Add support for sass-like '@extend'
+          require(`postcss-nesting`)(), // Add support for sass-like nesting of rules
+          require(`postcss-pxtorem`)({
             mediaQuery: false, // Ignore media queries
             minPixelValue: 0, // Minimal pixel value that will be processed
             propList: [], // List of CSS properties that can be changed from px to rem; empty array means that all CSS properties can change from px to rem
             replace: true, // Replace pixels with rems
             rootValue: 16, // Root font-size
-            selectorBlackList: ["html"], // Ignore pixels used for html
+            selectorBlackList: [`html`], // Ignore pixels used for html
             unitPrecision: 4, // Round rem units to 4 digits
           }),
-          require("postcss-preset-env")({
+          require(`postcss-preset-env`)({
             stage: 3, // More info about stages: https://cssdb.org/#staging-process
           }),
-          require("cssnano")(), // Minify CSS
+          require(`cssnano`)(), // Minify CSS
         ],
       },
     },

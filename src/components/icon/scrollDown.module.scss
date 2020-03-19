@@ -1,0 +1,61 @@
+.iconWrapper {
+  position: relative;
+  width: var(--scale-3);
+  height: var(--scale-6);
+  --sal-duration: var(--duration-5);
+  --sal-delay: var(--delay-6);
+}
+.scrollDown {
+  width: var(--scale-3);
+  height: var(--scale-6);
+  background: linear-gradient(
+    315deg,
+    #ff4136,
+    #85144b,
+    #b10dc9,
+    #0074d9,
+    #001f3f
+  );
+  background-size: 1000% 1000%;
+  border-radius: var(--scale-3);
+  animation: colorGradient 45s ease infinite;
+  &:before {
+    position: absolute;
+    left: 50%;
+    content: "";
+    width: var(--size-00);
+    height: var(--size-00);
+    background: var(--color-bg);
+    margin-left: calc(var(--size-000) * (-1));
+    top: var(--size-00);
+    border-radius: var(--size-00);
+    animation: scroll 4000ms ease infinite;
+  }
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+    transform: translateY(calc((var(--scale-6)) - ((var(--size-00)) * 3)));
+  }
+  60% {
+    opacity: 0;
+    transform: translateY(calc((var(--size-00)) * (-1)));
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes colorGradient {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
