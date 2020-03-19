@@ -14,7 +14,10 @@ const Portfolio = ({ data }) => {
   const article = data.strapiArticles
   return (
     <Layout animation="disable" seo={article.title} crumb={article.title}>
-      <h1 data-sal="slide-up">{article.title}</h1>
+      <div data-sal="slide-up" data-sal-delay="750" data-sal-duration="1000">
+        <h1>{article.title}</h1>
+        <h1>Hello</h1>
+      </div>
     </Layout>
   )
 }

@@ -12,7 +12,6 @@
     "gatsby-plugin-offline": "^3.0.19",
     "gatsby-plugin-react-helmet": "^3.1.14",
     "gatsby-plugin-sass": "^2.1.23",
-    "gatsby-plugin-scroll-reveal": "0.0.4",
     "gatsby-plugin-sharp": "^2.2.37",
     "gatsby-plugin-transition-link": "^1.18.0",
     "gatsby-source-filesystem": "^2.1.36",
@@ -27,7 +26,8 @@
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^16.11.0",
     "react-helmet": "^5.2.1",
-    "react-scroll-parallax": "^2.2.0"
+    "react-scroll-parallax": "^2.2.0",
+    "sal.js": "^0.7.4"
   },
   "devDependencies": {
     "cssnano": "^4.1.10",
