@@ -22,6 +22,8 @@
   --tracked-loose: 0.1em;
   --font-default: var(--font-weight-default) var(--scale-0) /
     var(--leading-default) var(--font-family-default);
+  --font-label: var(--font-weight-default) var(--scale-00) /
+    var(--leading-default) var(--font-family-default);
   --font-heading: var(--font-weight-bold) var(--scale-3) /
     var(--leading-heading) var(--font-family-default);
   --size-ratio: 2;
@@ -82,6 +84,7 @@
   --radius-5: 1.2em;
   --radius-100: 100%;
   --font-weight-default: 300;
+  --font-weight-medium: 500;
   --font-weight-bold: 700;
   --color-primary: var(--color-black);
   --color-text: var(--color-black);
@@ -93,8 +96,11 @@
   --color-grey-500: #cdcfd3;
   --color-grey-700: #a0a0a2;
   --color-grey-900: #4e4e50;
+  --color-orange: #f0ad3c;
   --color-purple: #6236ff;
+  --color-purple-light: hsl(253, 100%, 90%);
   --color-green: #90bd3f;
+  --color-green-light: #e9f2d9;
   --color-beige: #fafafa;
   --spacing: --size-3;
   --spacing-small: --size-2;

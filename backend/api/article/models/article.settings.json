@@ -50,6 +50,9 @@
     },
     "role": {
       "type": "richtext"
+    },
+    "lastUpdated": {
+      "type": "date"
     }
   }
 }

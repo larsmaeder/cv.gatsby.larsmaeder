@@ -31,7 +31,7 @@ export default ({
           <Img
             className={Style.img}
             fluid={mockup.childImageSharp.fluid}
-            alt="test"
+            alt={"Mockup für " + title}
           />
         </Parallax>
       </div>
@@ -39,7 +39,7 @@ export default ({
         <Img
           className={Style.img}
           fluid={background.childImageSharp.fluid}
-          alt="test"
+          alt={"Hintergrund für " + title}
         />
       </div>
     </div>

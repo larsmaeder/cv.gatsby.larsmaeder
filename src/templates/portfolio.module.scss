@@ -1,0 +1,60 @@
+.infoBox {
+  border: solid 1px var(--color-grey-300);
+  border-radius: var(--radius-1) var(--radius-1) 0 0;
+  background-color: var(--color-beige);
+  padding: var(--size-0);
+  p,
+  h6 {
+    font: {
+      size: var(--scale-00);
+    }
+  }
+  h6 {
+    margin-top: 0;
+  }
+  p {
+    margin-bottom: var(--size-0);
+    @media screen and (min-width: 36em) {
+      margin: {
+        bottom: 0;
+      }
+    }
+  }
+  div div:last-child p {
+    margin-bottom: 0;
+  }
+}
+.labelBox {
+  p {
+    margin: 0;
+  }
+  padding: var(--size-0);
+  background-color: var(--color-bg);
+  border-radius: 0 0 var(--radius-1) var(--radius-1);
+  border: solid 1px var(--color-grey-300);
+  border-top: 0;
+}
+
+.label span {
+  display: inline-block;
+  padding: var(--size-000);
+  border-radius: var(--radius-1);
+  margin: {
+    bottom: var(--size-000);
+  }
+  &:last-child {
+    margin: {
+      bottom: 0;
+    }
+  }
+  @media screen and (min-width: 64em) {
+    margin: {
+      bottom: 0;
+    }
+  }
+  white-space: nowrap;
+  font: var(--font-label);
+  letter-spacing: var(--tracked);
+  color: var(--color-bg);
+  background-color: var(--color-orange);
+}
