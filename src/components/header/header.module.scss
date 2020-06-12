@@ -39,4 +39,20 @@ header {
   }
   --sal-duration: var(--duration-6);
   --sal-delay: var(--delay-6);
+  .cv {
+    svg.icon {
+      height: var(--size-1);
+      width: var(--size-1);
+    }
+    text-align: right;
+    a {
+      color: var(--color-grey-500);
+      &:hover {
+        color: var(--color-text);
+      }
+      &::after {
+        display: none;
+      }
+    }
+  }
 }
