@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{j4nm:function(n,t,e){"use strict";e.r(t),e.d(t,"query",(function(){return o}));var r=e("q1tI"),a=e.n(r),o="2205376440";t.default=function(n){var t=n.data.strapiPortfolio;return a.a.createElement("h1",null,t.Title)}}}]);
+//# sourceMappingURL=component---src-templates-portfolio-js-50f3142cfa3c87fadf26.js.map
