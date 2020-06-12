@@ -65,7 +65,7 @@ export default () => (
                     </a>
                     .
                   </p>
-                  <p>©&#x202F;2020 Lars Mäder / Code and Design</p>
+                  <p>©&#x202F;2020 Lars Mäder</p>
                 </div>
               </div>
             </div>

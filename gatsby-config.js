@@ -11,6 +11,13 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://www.larsmaeder.github.io/portfolio.gatsby.larsmaeder",
+        policy: [{ userAgent: "*", disallow: ["/"] }],
+      },
+    },
+    {
       resolve: `gatsby-source-strapi`,
       options: {
         apiURL: `http://localhost:1337`,

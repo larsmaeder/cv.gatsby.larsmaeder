@@ -34,7 +34,6 @@
   border: solid 1px var(--color-grey-300);
   border-top: 0;
 }
-
 .label span {
   display: inline-block;
   padding: var(--size-000);
@@ -57,4 +56,20 @@
   letter-spacing: var(--tracked);
   color: var(--color-bg);
   background-color: var(--color-orange);
+}
+.container {
+  img {
+    width: 100%;
+  }
+}
+.updated {
+  margin-top: var(--size-2);
+  hr {
+    border: 1px solid var(--color-grey-300);
+  }
+  color: var(--color-grey-700);
+  p,
+  h6 {
+    font-size: var(--scale-00);
+  }
 }

@@ -53,6 +53,15 @@
     },
     "lastUpdated": {
       "type": "date"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "carousel": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
     }
   }
 }
